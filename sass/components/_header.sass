@@ -1,0 +1,23 @@
+@use "../utils/_utilsMain" as utils
+
+.header
+  display: flex
+  padding: 1.5rem 0
+
+  &__logo
+    flex-shrink: 0
+    margin-right: 3rem
+    width: 10rem
+
+  &__navbar
+    flex-flow: 1
+    display: flex
+    justify-content: space-between
+    align-items: center
+  
+  &__list
+    column-gap: 1.25rem
+    display: flex
+    @extend %paragraph-s
+    @extend %text-grey
+  
